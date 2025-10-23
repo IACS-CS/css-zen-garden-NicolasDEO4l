@@ -26,16 +26,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Futura, sans-serif;
+  font-family: Quintessential, sans-serif;
 }
 /* Background */
 #css-zen-garden {
-  background: linear-gradient(60deg, #403636 0%, #0c1579 100%);
+  background: linear-gradient(60deg, #712d2d 0%, #0c1579 100%);
 }
 /* Page wrapper */
 .page-wrapper {
   box-sizing: border-box;
-  background: rgba(46, 45, 52, 0.9);
+  background: rgba(97, 86, 39, 0.9);
   color: rgb(243, 255, 246);
   border: 1px solid #ccc;
   padding: 1em;
@@ -44,5 +44,5 @@ h6 {
   margin: 0 auto;
 }
 .page-wrapper a {
-  color: rgb(223, 223, 255);
+  color: rgb(70, 70, 118);
 }
