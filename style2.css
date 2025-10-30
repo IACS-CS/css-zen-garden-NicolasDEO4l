@@ -33,16 +33,66 @@ h6 {
   background: linear-gradient(60deg, #712d2d 0%, #0c1579 100%);
 }
 /* Page wrapper */
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "Increase text contrast and readability on the page wrapper (only CSS).
+    Improve headings, links, line-height, and accessibility focus styles."
+*/
 .page-wrapper {
   box-sizing: border-box;
-  background: rgba(97, 86, 39, 0.9);
-  color: rgb(243, 255, 246);
-  border: 1px solid #ccc;
-  padding: 1em;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: rgba(
+    97,
+    86,
+    39,
+    0.95
+  ); /* slightly darker so white text reads more clearly */
+  color: #ffffff; /* high contrast text */
+  font-size: 18px; /* slightly larger for readability */
+  line-height: 1.6;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.25rem;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.28);
   max-width: 820px;
   margin: 0 auto;
+  transition: color 160ms ease, background 220ms ease;
 }
+
+/* Content links (high-contrast accent) */
 .page-wrapper a {
-  color: rgb(70, 70, 118);
+  color: #ffd27a; /* warm high-contrast accent */
+  text-decoration: underline dotted rgba(255, 210, 122, 0.25);
+  transition: color 120ms ease, text-decoration-color 120ms ease,
+    transform 140ms ease;
+}
+.page-wrapper a:hover,
+.page-wrapper a:focus {
+  color: #ffba4d;
+  text-decoration-color: rgba(255, 210, 122, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Clear, high-contrast headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* Paragraphs and smaller text tweaks for legibility */
+.page-wrapper p,
+.page-wrapper li,
+.page-wrapper dd,
+.page-wrapper dt {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* Visible focus for keyboard users */
+.page-wrapper a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 200, 120, 0.14);
+  border-radius: 6px;
 }
